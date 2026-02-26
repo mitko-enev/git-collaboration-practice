@@ -21,4 +21,4 @@ A practice repository for learning Git and GitHub collaboration workflows includ
 2. Create a feature branch
 3. Open a Pull Request
 4. Request review
-5. Merge after approva
+5. Merge after approval
