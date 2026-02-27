@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitBoard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">GitBoard</h1>
+    <p class="app-subtitle">Kanban board (skeleton)</p>
+  </header>
+
+  <main class="app">
+    <section class="board" aria-label="Kanban board">
+      <article class="column" data-column-id="todo">
+        <header class="column__header">
+          <h2 class="column__title">To Do</h2>
+        </header>
+
+        <div class="column__cards" aria-label="To Do cards">
+          <div class="card" data-card-id="c1">
+            <h3 class="card__title">Placeholder card</h3>
+            <p class="card__meta">This is sample content.</p>
+          </div>
+        </div>
+
+        <footer class="column__footer">
+          <button class="btn btn--ghost" type="button" data-action="add-card" disabled>
+            + Add card (soon)
+          </button>
+        </footer>
+      </article>
+
+      <article class="column" data-column-id="inprogress">
+        <header class="column__header">
+          <h2 class="column__title">In Progress</h2>
+        </header>
+
+        <div class="column__cards" aria-label="In Progress cards">
+          <div class="card" data-card-id="c2">
+            <h3 class="card__title">Work in progress</h3>
+            <p class="card__meta">Drag & drop later.</p>
+          </div>
+        </div>
+
+        <footer class="column__footer">
+          <button class="btn btn--ghost" type="button" data-action="add-card" disabled>
+            + Add card (soon)
+          </button>
+        </footer>
+      </article>
+
+      <article class="column" data-column-id="done">
+        <header class="column__header">
+          <h2 class="column__title">Done</h2>
+        </header>
+
+        <div class="column__cards" aria-label="Done cards">
+          <div class="card" data-card-id="c3">
+            <h3 class="card__title">Completed task</h3>
+            <p class="card__meta">Persistence later.</p>
+          </div>
+        </div>
+
+        <footer class="column__footer">
+          <button class="btn btn--ghost" type="button" data-action="add-card" disabled>
+            + Add card (soon)
+          </button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Built for Git/GitHub collaboration practice.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
