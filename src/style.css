@@ -1,0 +1,95 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.app-header,
+.app-footer {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-footer {
+  border-top: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.app-subtitle {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.app {
+  padding: 16px;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.column {
+  min-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.column__header {
+  margin-bottom: 10px;
+}
+
+.column__title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.column__cards {
+  display: grid;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card__title {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.card__meta {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.column__footer {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: transparent;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+}
